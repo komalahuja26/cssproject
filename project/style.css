@@ -1,0 +1,139 @@
+/* the base of the page is targeted here
+  We have just targeted background color and the height of the page*/
+html {
+  background-color: #f0f0f0;
+  height: 100%;
+}
+
+
+/*
+Here we are targeting the body of the page and using the flex column property to use the flexbox
+We have also set the font-family, font-size and basic margin and padding as well
+*/
+body {
+  display: flex;
+  flex-flow: column;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 30px;
+}
+
+/*
+we have added the flex properties here and set the flex type to column
+background color is also padding as well as box-shadow 
+and we have also used the border radius as well
+*/
+main {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/*
+here only the first kind of h1 is targeted and used the basic styling
+*/
+h1:first-of-type {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0 0 30px;
+  padding: 15px;
+  border: 3px solid #00796b;
+  border-radius: 10px;
+  background-color: #00bcd4;
+  color: #fff;
+  text-align: center;
+}
+
+/* we have targeted the nav tag to target the links wtihing*/
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  text-align: center;
+}
+/* footer is target and styled a bit here*/
+footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* the article with about id's second child is targeted here along with
+the  */
+#about section:nth-child(2),
+main div #contribute,
+#styles {
+  background-color: #e6e6e6;
+  padding: 25px;
+  border-left: 6px solid #00796b;
+  margin-top: 30px;
+}
+
+
+/* The h1 of first type is targeted here and the hover function is used here*/
+h1:first-of-type:hover {
+  background-color: #00695c;
+}
+
+/* The h2 in heder is target here the styling is pretty basic and the bottom margin is also used here*/
+header h2 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* The p tag in the header is used here*/
+header p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+/* Again the nav element is used here and targeted */
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  text-align: center;
+}
+/* a in nav is targeted here*/
+nav a {
+  font-size: 1.3em;
+}
+
+/* the hover function is used on a in nav*/
+nav a:hover {
+  color: #00e5ff;
+}
+
+
+/* The profile class's is targeted here on p tag */
+.profile p {
+  margin-left: 25px;
+}
+
+/* The profile class along with the styles id is targeted here */
+.profile, #styles {
+  margin-bottom: 30px;
+}
+
+/* The profile class's img tag is targeted here */
+.profile img {
+  max-width: 120px;
+  border-radius: 50%;
+}
+
+
+/* the star svg is targeted here and width and height is set here */
+svg{
+  width: 30vh;
+  height: 30vh;
+}
+
+/* the second star is targeted here */
+svg:nth-child(1){
+  margin-left:10%;
+}
